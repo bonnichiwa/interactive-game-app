@@ -1,30 +1,26 @@
 body {
-    border: 1.5em solid gold;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    overflow: auto;
-    text-align: center;
+  background: url(../images/background4.jpg);
 }
 
 h1 {
   font-family: 'Fredoka One', cursive;
   margin-top: -.2em;
-  margin-bottom: -.2em;
-  text-shadow: 2px 2px gold;
+  margin-bottom: .5em;
+  text-shadow: 2px 2px lightgray;
 }
 
 h2 {
   font-family: 'Questrial', sans-serif;
   font-size: 1.25em;
   margin-bottom: .3em;
+  color: gainsboro;
 } 
 
 h3 {
   font-family: 'Questrial', sans-serif;
   font-size: 1em;
   margin-top: 0.75em;
+  color: gainsboro;
 }
 
 
@@ -32,7 +28,24 @@ h3 {
 /*--- Landing page ---*/
 
 #landing-page {
-  display: none;
+    border: 1em solid dimgray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    text-align: center;
+}
+
+.background-box {
+  margin-top: -32em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+  height: 37em;
+  background-color: dimgray;
+  border: 3px dotted white;
 }
 
 header {
@@ -47,23 +60,75 @@ header {
 
 #commence-button {
   font-size: 1.75em;
-  color: black;
+  color: gold;
   padding: .75em;
-  background-color: gold;
+  background-color: dimgray;
   border-radius: 10px;
   text-align: center;
-  border: none;
+  border: 2px solid gold;
   font-family: 'Fredoka One', cursive;
 }
 
 /*--- Quiz interface ---*/
 
 #quiz-interface {
-  padding-top: 8em;
+  display: none;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
   padding-bottom: 8em;
   overflow: hidden;
+  border: 1em solid dimgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  text-align: center;
+}
+
+#quiz-interface > .background-box {
+  margin-top: -58em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+  height: 80em;
+  background-color: dimgray;
+}
+
+#quiz-title {
+  padding-top: 3.3em;
 }
 
 #pokedex-image {
-  padding-top: 3em;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+#new-button {
+  font-size: 1.5em;
+  color: white;
+  padding: .75em;
+  background-color: dimgray;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid white;
+  font-family: 'Fredoka One', cursive;
+  float: right;
+}
+
+/*--- Quiz questions ---*/
+
+.question {
+  font-family: 'Questrial', sans-serif;
+  margin-top: -17em;
+  margin-left: -19em;
+}
+
+.answer-options {
+  font-family: 'Questrial', sans-serif;
+  padding-top: 15em;
+  text-align: left;
+  margin-left: 33em;
 }
