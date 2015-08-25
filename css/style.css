@@ -1,0 +1,62 @@
+/*body:before, body:after {
+    content: "";
+    position: fixed;
+    background: gold;
+    left: 0;
+    right: 0;
+    height: 2em;
+
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+  border-left: 2em solid gold;
+  border-right: 2em solid gold;  
+}*/
+
+body
+{
+    border: 1.5em solid gold;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    text-align: center;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  margin-top: -.2em;
+  margin-bottom: -.2em;
+  text-shadow: 2px 2px gold;
+}
+
+h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.25em;
+  margin-bottom: .3em;
+} 
+
+h3 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+button {
+  font-size: 1em;
+  color: black;
+  padding: .5em;
+  background-color: gold;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  font-family: 'Fredoka One', sans-serif;
+
+}
