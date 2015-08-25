@@ -1,30 +1,8 @@
-/*body:before, body:after {
-    content: "";
-    position: fixed;
-    background: gold;
-    left: 0;
-    right: 0;
-    height: 2em;
-
-}
-body:before {
-    top: 0;
-}
-body:after {
-    bottom: 0;
-}
 body {
-  border-left: 2em solid gold;
-  border-right: 2em solid gold;  
-}*/
-
-body
-{
     border: 1.5em solid gold;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
     overflow: auto;
     text-align: center;
@@ -46,17 +24,46 @@ h2 {
 h3 {
   font-family: 'Questrial', sans-serif;
   font-size: 1em;
-  margin-top: 0.5em;
+  margin-top: 0.75em;
 }
 
-button {
-  font-size: 1em;
+
+
+/*--- Landing page ---*/
+
+#landing-page {
+  display: none;
+}
+
+header {
+  padding-top: 5em;
+}
+
+#prompt-start {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.1em;
+  margin-top: 3em;
+}
+
+#commence-button {
+  font-size: 1.75em;
   color: black;
-  padding: .5em;
+  padding: .75em;
   background-color: gold;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   border: none;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Fredoka One', cursive;
+}
 
+/*--- Quiz interface ---*/
+
+#quiz-interface {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  overflow: hidden;
+}
+
+#pokedex-image {
+  padding-top: 3em;
 }
