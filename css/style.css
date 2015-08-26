@@ -1,9 +1,12 @@
 .background-image {
   background-image: url('../images/pokebackground.png');
-  background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 0 10em;
-  margin: 0 0;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 h1 {
@@ -37,29 +40,12 @@ li {
 }
 
 
-
 /*--- Landing page ---*/
 
 #landing-page {
-  /*border: 1em solid dimgray;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-/*  overflow: auto;*/
   text-align: center;
-}*/
+}
 
-/*.background-box {
-  margin-top: -35em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40em;
-  height: 40em;
-  background-color: dimgray;
-  border: 3px dotted white;
-}*/
 
 
 #prompt-start {
@@ -83,25 +69,20 @@ li {
 
 .background-image2 {
   background: url('../images/pokebackground.png');
-  background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 0 4em;
+  background-attachment: fixed;
+  position: fixed;
   margin: 0 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #quiz-interface {
   display: none;
   text-align: center;
 }
-
-/*#quiz-interface > .background-box {
-  margin-top: -39.5em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40em;
-  height: 40em;
-  background-color: white;
-}*/
 
 #quiz-title {
   padding-top: 3.3em;
