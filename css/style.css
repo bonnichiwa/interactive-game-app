@@ -4,23 +4,24 @@ body {
 
 h1 {
   font-family: 'Fredoka One', sans-serif;
-  margin-top: -.2em;
-  margin-bottom: .5em;
+  margin-top: -0.1em;
+  margin-bottom: 0.2em;
   text-shadow: 2px 2px lightgray;
+  font-size: 3em;
 }
 
 h2 {
   font-family: 'Questrial', sans-serif;
   font-size: 1.25em;
   margin-bottom: .3em;
-  color: gold;
+  color: white;
 } 
 
 h3 {
   font-family: 'Questrial', sans-serif;
   font-size: 1em;
-  margin-top: 0.75em;
-  color: gold;
+  margin-top: 1.75em;
+  color: white;
 }
 
 header {
@@ -47,7 +48,7 @@ li {
 }
 
 .background-box {
-  margin-top: -32em;
+  margin-top: -35em;
   margin-left: auto;
   margin-right: auto;
   max-width: 50em;
@@ -78,13 +79,11 @@ li {
 
 #quiz-interface {
   display: none;
-  padding-top: .75em;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-bottom: 8em;
   overflow: hidden;
   border: 1em solid dimgray;
   position: absolute;
+  padding-right: .5em;
+  padding-top: .5em;
   top: 0;
   right: 0;
   left: 0;
@@ -94,16 +93,12 @@ li {
 }
 
 #quiz-interface > .background-box {
-  margin-top: -40em;
+  margin-top: -39.5em;
   margin-left: auto;
   margin-right: auto;
   max-width: 50em;
   height: 40em;
   background-color: dimgray;
-}
-
-#quiz-interface > header {
-
 }
 
 #quiz-title {
@@ -128,26 +123,19 @@ li {
   margin-top: 0.5em;
 }
 
-.question-number {
-  font-family: 'Fredoka One', sans-serif;
-  margin-top: -21.5em;
-}
-
 .question {
   font-family: 'Questrial', sans-serif;
   margin-top: -22.5em;
-
+  color: white;
 }
 
 .answer-options {
   font-family: 'Questrial', sans-serif;
   padding-top: 5em;
-  margin-top: 4em;
-  text-align: left;
-  margin-left: 38.5em;
+  margin-top: 4em;  
   margin-bottom: 3em;
 }
 
 .answer-choices {
-  margin-left: -2em;
+  margin-left: -3em;
 }
