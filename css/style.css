@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka One', sans-serif;
   margin-top: -.2em;
   margin-bottom: .5em;
   text-shadow: 2px 2px lightgray;
@@ -13,14 +13,22 @@ h2 {
   font-family: 'Questrial', sans-serif;
   font-size: 1.25em;
   margin-bottom: .3em;
-  color: gainsboro;
+  color: gold;
 } 
 
 h3 {
   font-family: 'Questrial', sans-serif;
   font-size: 1em;
   margin-top: 0.75em;
-  color: gainsboro;
+  color: gold;
+}
+
+header {
+  padding-top: 5em;
+}
+
+li {
+  list-style: none;
 }
 
 
@@ -28,14 +36,14 @@ h3 {
 /*--- Landing page ---*/
 
 #landing-page {
-    border: 1em solid dimgray;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    overflow: auto;
-    text-align: center;
+  border: 1em solid dimgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  text-align: center;
 }
 
 .background-box {
@@ -43,14 +51,11 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   max-width: 50em;
-  height: 37em;
+  height: 40em;
   background-color: dimgray;
   border: 3px dotted white;
 }
 
-header {
-  padding-top: 5em;
-}
 
 #prompt-start {
   font-family: 'Questrial', sans-serif;
@@ -66,14 +71,14 @@ header {
   border-radius: 10px;
   text-align: center;
   border: 2px solid gold;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka One', sans-serif;
 }
 
 /*--- Quiz interface ---*/
 
 #quiz-interface {
   display: none;
-  padding-top: 1em;
+  padding-top: .75em;
   padding-right: 1em;
   padding-left: 1em;
   padding-bottom: 8em;
@@ -89,21 +94,20 @@ header {
 }
 
 #quiz-interface > .background-box {
-  margin-top: -58em;
+  margin-top: -40em;
   margin-left: auto;
   margin-right: auto;
   max-width: 50em;
-  height: 80em;
+  height: 40em;
   background-color: dimgray;
+}
+
+#quiz-interface > header {
+
 }
 
 #quiz-title {
   padding-top: 3.3em;
-}
-
-#pokedex-image {
-  padding-top: 1em;
-  margin-top: 2em;
 }
 
 #new-button {
@@ -114,21 +118,36 @@ header {
   border-radius: 10px;
   text-align: center;
   border: 2px solid white;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka One', sans-serif;
   float: right;
 }
 
 /*--- Quiz questions ---*/
 
+#pokedex-image {
+  margin-top: 0.5em;
+}
+
+.question-number {
+  font-family: 'Fredoka One', sans-serif;
+  margin-top: -21.5em;
+}
+
 .question {
   font-family: 'Questrial', sans-serif;
-  margin-top: -17em;
-  margin-left: -19em;
+  margin-top: -22.5em;
+
 }
 
 .answer-options {
   font-family: 'Questrial', sans-serif;
-  padding-top: 15em;
+  padding-top: 5em;
+  margin-top: 4em;
   text-align: left;
-  margin-left: 33em;
+  margin-left: 38.5em;
+  margin-bottom: 3em;
+}
+
+.answer-choices {
+  margin-left: -2em;
 }
