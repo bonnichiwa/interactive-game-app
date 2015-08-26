@@ -19,16 +19,16 @@ h1 {
 
 h2 {
   font-family: 'Questrial', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.75em;
   margin-bottom: .3em;
-  text-shadow: 2px 2px white;
+  text-shadow: 1px 1px white;
 } 
 
 h3 {
   font-family: 'Questrial', sans-serif;
-  font-size: 1em;
-  margin-top: 1.75em;
-  text-shadow: 2px 2px white;
+  font-size: 1.3em;
+  margin-top: -.5em;
+  text-shadow: 1px 1px white;
 }
 
 header {
@@ -50,18 +50,19 @@ li {
 
 #prompt-start {
   font-family: 'Questrial', sans-serif;
-  font-size: 1.1em;
-  margin-top: 3em;
+  font-size: 1.5em;
+  margin-top: 6.5em;
+  margin-bottom: 0.5em;
 }
 
 #commence-button {
   font-size: 1.75em;
-  color: skyblue;
+  color: darkseagreen;
   padding: .75em;
   background-color: white;
   border-radius: 10px;
   text-align: center;
-  border: 2px solid skyblue;
+  border: 2px solid darkseagreen;
   font-family: 'Fredoka One', sans-serif;
 }
 
@@ -106,9 +107,22 @@ li {
   margin-top: 0.5em;
 }
 
+#submit-blue-button {
+  position: absolute;
+  margin-top: -9.3em;
+  margin-left: 11.2em;
+}
+
+#submit-blue-button:hover {
+  background-image: url("../images/greencircle.png"), url("../images/bluecircle.png");
+  width: 100;
+  height: 100;
+  cursor: pointer;
+}
+
 .question { 
   font-family: 'Questrial', sans-serif;
-  margin-top: -22.5em;
+  margin-top: -21.5em;
   color: white;
 }
 
@@ -116,9 +130,14 @@ li {
   font-family: 'Questrial', sans-serif;
   padding-top: 5em;
   margin-top: 4em;  
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 .answer-choices {
   margin-left: -3em;
+}
+
+#question-count {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 2em;
 }
