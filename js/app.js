@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
-  var currentQuestion = 1
   var score = 0 
   startGame();
-  nextQuestion();
 
   /*---Clicking start---*/
 
@@ -29,7 +27,7 @@ $(document).ready(function() {
 
   function nextQuestion() {
     $("#submit-blue-button").click(function() {
-      questionIndex++;
+      $('input:radio[name=radio]').attr('checked',false);
       displayQuestion();
     });
   }
@@ -41,6 +39,8 @@ $(document).ready(function() {
     $("#option3").text(quiz[questionIndex].choices[2]);
     $("#option4").text(quiz[questionIndex].choices[3]);
     $("#question-number").text(questionIndex+1);
+    questionIndex++;
+    nextQuestion();
   }
 
 
