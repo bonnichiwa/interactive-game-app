@@ -24,6 +24,7 @@ $(document).ready(function() {
     score = 0;
     questionIndex = 0;
     console.log("Current score: " + score);
+    console.log("Current question index: " + questionIndex);
     displayQuestion();
   }
 
@@ -40,7 +41,7 @@ $(document).ready(function() {
     $("#option3").text(quiz[questionIndex].choices[2]);
     $("#option4").text(quiz[questionIndex].choices[3]);
     $("#question-number").text(questionIndex+1);
-    questionIndex++;
+    console.log("Current question index: " + questionIndex);
   }
 
   /*---Checking Answers---*/
@@ -48,6 +49,7 @@ $(document).ready(function() {
   function checkAnswer() {
     var playerAnswer = $("input[name='radio']:checked").val();
     console.log("The player answered: " + playerAnswer);
+    console.log("For question index #: " + questionIndex);
       if ($("input[name='radio']:checked").size() > 0) {
         if (playerAnswer == quiz[questionIndex].answer) {
           console.log("Score: + 1");
@@ -55,6 +57,7 @@ $(document).ready(function() {
           console.log("New current score: " + score);
           $("#score-number").text(score);
         }
+        questionIndex++;
         displayQuestion();
       } else {
         alert("Please select a valid answer");
