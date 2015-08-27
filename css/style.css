@@ -147,16 +147,18 @@ li {
   animation:blink normal 2s infinite ease-in-out;
 }*/
 
-#explanation {
+.explanation {
   display: none;
   position: absolute;
-  margin-top: -32.75em;
-  margin-left: -26.5em;
+  left: 1000px;
+/*  margin-top: -32.75em;
+  margin-left: -26.5em;*/
   border: 1.5em solid white;
   border-radius: 5%;
+
 }
 
-#explanation:hover {
+.explanation:hover {
   cursor: pointer;
 }
 
