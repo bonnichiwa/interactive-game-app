@@ -46,12 +46,10 @@ li {
   text-align: center;
 }
 
-
-
 #prompt-start {
   font-family: 'VT323', sans-serif;
   font-size: 1.5em;
-  margin-top: 6.5em;
+  margin-top: 7.5em;
   margin-bottom: 0.5em;
 }
 
@@ -129,14 +127,45 @@ li {
 
 .answer-options {
   font-family: 'VT323', sans-serif;
-  padding-top: 2.5em;
-  margin-top: 4em;  
-  margin-bottom: 2.5em;
+  padding-top: 4.5em;
+  margin-top: 2em;  
+  margin-bottom: 2.25em;
   font-size: 1.3em;
 }
 
 .answer-choices {
   margin-left: -3em;
+}
+
+/*-- Question display status--*/
+
+.poke-tabs li {
+  font-family: 'Press Start 2P', sans-serif;
+  display: inline-block;
+  list-style: none;
+  padding: .65em 1em;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  border: 2px solid #2F2F2F;
+  margin-left: 1%;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.correct {
+  background-color: green;
+  opacity: 1;
+  background-image: url("../images/pokeball.png");
+
+}
+
+.wrong {
+  background-color: gray;
+  opacity: 0.1;
+}
+
+.tbd {
+  opacity: 0.35;
 }
 
 #question-count {

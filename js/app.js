@@ -24,6 +24,8 @@ $(document).ready(function() {
     score = 0;
     questionIndex = 0;
     $("#score-number").text("-");
+    $(".poke-tabs").find('li').removeClass();
+    $(".poke-tabs").find('li').addClass("tbd");
     console.log("Current score: " + score);
     console.log("Current question index: " + questionIndex);
     displayQuestion();
@@ -57,6 +59,13 @@ $(document).ready(function() {
           score++;
           console.log("New current score: " + score);
           $("#score-number").text(score);
+          $(".tbd[value=" + questionIndex + "]")
+          .removeClass("tbd")
+          .addClass("correct");
+        } else {
+          $(".tbd[value=" + questionIndex + "]")
+        .removeClass("tbd")
+        .addClass("wrong");
         }
         questionIndex++;
         displayQuestion();
