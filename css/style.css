@@ -166,7 +166,7 @@ li {
   font-family: 'Press Start 2P', sans-serif;
   display: inline-block;
   list-style: none;
-  padding: .65em 1em;
+  padding: .65em .65em;
   font-size: 1em;
   color: rgb(0, 0, 0);
   border: 2px solid #2F2F2F;

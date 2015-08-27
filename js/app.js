@@ -87,13 +87,12 @@ $(document).ready(function() {
           .removeClass("tbd")
           .addClass("wrong");
         }
+        questionIndex++;
         $("#explanation").fadeIn(1000);
         $("#explanation").click(function() {
-          questionIndex++;
           $("#explanation").fadeOut(1000);
           displayQuestion();
         })
-        
       } else {
         alert("Please select a valid answer");
       }
