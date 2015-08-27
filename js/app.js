@@ -26,11 +26,9 @@ $(document).ready(function() {
     displayQuestion();
   }
 
-  function nextQuestion() {
-    $("#submit-blue-button").click(function() {
-      checkAnswer();
-    });
-  }
+  $("#submit-blue-button").click(function() {
+    checkAnswer();
+  });
 
 
   function displayQuestion() {
@@ -42,7 +40,6 @@ $(document).ready(function() {
     $("#option4").text(quiz[questionIndex].choices[3]);
     $("#question-number").text(questionIndex+1);
     questionIndex++;
-    nextQuestion();
   }
 
   /*---Checking Answers---*/
@@ -53,7 +50,6 @@ $(document).ready(function() {
         displayQuestion();
       } else {
         alert("Please select a valid answer");
-        nextQuestion();
       }
   }
 
