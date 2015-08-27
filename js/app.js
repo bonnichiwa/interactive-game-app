@@ -17,6 +17,8 @@ $(document).ready(function() {
     $('#new-button').click(function() {
     $("#quiz-interface").fadeOut(1000);
     $("#landing-page").fadeIn(1000);
+    $("#battle-song")[0].pause();
+    openingSong();
   })
 }
 
