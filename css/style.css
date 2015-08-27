@@ -10,24 +10,24 @@
 }
 
 h1 {
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   margin-top: -0.1em;
   margin-bottom: 0.2em;
   text-shadow: 2px 2px lightgray;
-  font-size: 3em;
+  font-size: 2.25em;
 }
 
 h2 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'VT323', sans-serif;
   font-size: 1.75em;
   margin-bottom: .3em;
   text-shadow: 1px 1px white;
 } 
 
 h3 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'VT323', sans-serif;
   font-size: 1.3em;
-  margin-top: -.5em;
+  margin-top: .5em;
   text-shadow: 1px 1px white;
 }
 
@@ -49,21 +49,21 @@ li {
 
 
 #prompt-start {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'VT323', sans-serif;
   font-size: 1.5em;
   margin-top: 6.5em;
   margin-bottom: 0.5em;
 }
 
 #commence-button {
-  font-size: 1.75em;
+  font-size: 1.2em;
   color: darkseagreen;
   padding: .75em;
   background-color: white;
   border-radius: 10px;
   text-align: center;
   border: 2px solid darkseagreen;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 /*--- Quiz interface ---*/
@@ -90,14 +90,14 @@ li {
 }
 
 #new-button {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: skyblue;
   padding: .75em;
   background-color: white;
   border-radius: 10px;
   text-align: center;
   border: 2px solid skyblue;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   float: right;
 }
 
@@ -121,16 +121,18 @@ li {
 }
 
 .question { 
-  font-family: 'Questrial', sans-serif;
-  margin-top: -21.5em;
+  font-family: 'VT323', sans-serif;
+  margin-top: -16.5em;
   color: white;
+  font-size: 1.3em;
 }
 
 .answer-options {
-  font-family: 'Questrial', sans-serif;
-  padding-top: 5em;
+  font-family: 'VT323', sans-serif;
+  padding-top: 2.5em;
   margin-top: 4em;  
-  margin-bottom: 4em;
+  margin-bottom: 2.5em;
+  font-size: 1.3em;
 }
 
 .answer-choices {
@@ -138,6 +140,7 @@ li {
 }
 
 #question-count {
-  font-family: 'Fredoka One', sans-serif;
-  font-size: 2em;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1em;
+  text-shadow: 1px 1px white;
 }
