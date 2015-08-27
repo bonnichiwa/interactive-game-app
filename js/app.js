@@ -88,9 +88,9 @@ $(document).ready(function() {
           .addClass("wrong");
         }
         questionIndex++;
-        $(".explanation[value=" + questionIndex + "]").fadeIn(1000);
+        $(".explanation[value=" + questionIndex + "]").fadeIn(500);
         $(".explanation[value=" + questionIndex + "]").click(function() {
-          $(".explanation[value=" + questionIndex + "]").fadeOut(1000);
+          $(".explanation[value=" + questionIndex + "]").fadeOut(500);
           displayQuestion();
         })
       } else {
