@@ -1,22 +1,37 @@
 $(document).ready(function() {
 
-  // var score = 0 
   startGame();
 
   /*---Clicking start---*/
 
   function startGame() {
-  $('#commence-button').click(function() {
+    openingSong();
+    $('#commence-button').click(function() {
     $("#landing-page").fadeOut(1000);
     $("#quiz-interface").fadeIn(1000);
     gameInterface();
   })
 
-  $('#new-button').click(function() {
+    $('#new-button').click(function() {
     $("#quiz-interface").fadeOut(1000);
     $("#landing-page").fadeIn(1000);
   })
 }
+
+  
+  /*---Music--*/
+
+  function openingSong() {
+    $('#opening-song')[0].volume = 0.5;
+    $('#opening-song')[0].load();
+    $('#opening-song')[0].play();
+  }
+
+  function battleSong() {
+    $('#battle-song')[0].volume = 0.5;
+    $('#battle-song')[0].load();
+    $('#battle-song')[0].play();
+  }
 
   /*---Game interface---*/
 
