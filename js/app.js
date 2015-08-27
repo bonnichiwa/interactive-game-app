@@ -23,6 +23,7 @@ $(document).ready(function() {
   function gameInterface() {
     score = 0;
     questionIndex = 0;
+    $("#score-number").text("-");
     console.log("Current score: " + score);
     console.log("Current question index: " + questionIndex);
     displayQuestion();
