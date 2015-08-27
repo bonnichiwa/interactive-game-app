@@ -107,22 +107,22 @@ $(document).ready(function() {
   answer: 4
   },
 
-  {question:"What is Kadabra's final evolution?",
+  {question:"Which Pokemon is Kadabra's final evolution?",
   choices: ["Mega Alakazam", "Abra", "Abrakadabra", "Alakazam"],
   answer: 1
   },
 
-  {question:"How does Chansey evolve into Blissey?",
+  {question:"What does Chansey need to evolve into Blissey?",
   choices: ["Happiness", "Friendship", "Love", "Holding an item"],
   answer: 2
   },
 
-  {question:"Which Pokemon would be the most effective in a battle against Chikorita?",
+  {question:"Who would be the most effective in a battle against Chikorita?",
   choices: ["Milotic", "Pichu", "Nidoking", "Chimchar"],
   answer: 4
   },
 
-  {question:"What type of Pokemon is Gengar?",
+  {question:"Which of the following type(s) of Pokemon is Gengar?",
   choices: ["Ghost", "Poison", "Dark and Ghost", "Poison and Ghost"],
   answer: 4
   }
