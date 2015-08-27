@@ -5,37 +5,37 @@ $(document).ready(function() {
   /*---Clicking start---*/
 
   function startGame() {
-    openingSong();
+    // openingSong();
     $('#commence-button').click(function() {
     $("#landing-page").fadeOut(1000);
     $("#quiz-interface").fadeIn(1000);
     $("#opening-song")[0].pause();
-    battleSong();
+    // battleSong();
     gameInterface();
   })
 
     $('#new-button').click(function() {
     $("#quiz-interface").fadeOut(1000);
     $("#landing-page").fadeIn(1000);
-    $("#battle-song")[0].pause();
-    openingSong();
+    // $("#battle-song")[0].pause();
+    // openingSong();
   })
 }
 
   
   /*---Music--*/
 
-  function openingSong() {
-    $('#opening-song')[0].volume = 0.5;
-    $('#opening-song')[0].load();
-    $('#opening-song')[0].play();
-  }
+  // function openingSong() {
+  //   $('#opening-song')[0].volume = 0.5;
+  //   $('#opening-song')[0].load();
+  //   $('#opening-song')[0].play();
+  // }
 
-  function battleSong() {
-    $('#battle-song')[0].volume = 0.5;
-    $('#battle-song')[0].load();
-    $('#battle-song')[0].play();
-  }
+  // function battleSong() {
+  //   $('#battle-song')[0].volume = 0.5;
+  //   $('#battle-song')[0].load();
+  //   $('#battle-song')[0].play();
+  // }
 
   /*---Game interface---*/
 
@@ -75,6 +75,7 @@ $(document).ready(function() {
       if ($("input[name='radio']:checked").size() > 0) {
         if (playerAnswer == quiz[questionIndex].answer) {
           console.log("Score: + 1");
+          // $("#super-effective").css("display","block");
           score++;
           console.log("New current score: " + score);
           $("#score-number").text(score);

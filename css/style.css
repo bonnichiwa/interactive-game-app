@@ -137,6 +137,16 @@ li {
   margin-left: -3em;
 }
 
+/*@keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}}
+#super-effective {
+  display: none;
+  margin-top: -26em;
+  margin-left: 16em;
+  position: absolute;
+  transition:all 1s ease-in-out;
+  animation:blink normal 2s infinite ease-in-out;
+}*/
+
 /*-- Question display status--*/
 
 .poke-tabs li {
