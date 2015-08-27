@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var score = 0 
+  // var score = 0 
   startGame();
 
   /*---Clicking start---*/
@@ -23,6 +23,7 @@ $(document).ready(function() {
   function gameInterface() {
     score = 0;
     questionIndex = 0;
+    console.log("Current score: " + score);
     displayQuestion();
   }
 
@@ -45,8 +46,15 @@ $(document).ready(function() {
   /*---Checking Answers---*/
 
   function checkAnswer() {
-    var playerAnswer = $("input[name='radio']:checked");
-      if (playerAnswer.size() > 0) {
+    var playerAnswer = $("input[name='radio']:checked").val();
+    console.log("The player answered: " + playerAnswer);
+      if ($("input[name='radio']:checked").size() > 0) {
+        if (playerAnswer == quiz[questionIndex].answer) {
+          console.log("Score: + 1");
+          score++;
+          console.log("New current score: " + score);
+          $("#score-number").text(score);
+        }
         displayQuestion();
       } else {
         alert("Please select a valid answer");
