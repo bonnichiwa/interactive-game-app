@@ -16,6 +16,7 @@ $(document).ready(function() {
     $("#quiz-interface").fadeOut(1000);
     $("#landing-page").fadeIn(1000);
   })
+}
 
   /*---Game interface---*/
 
@@ -27,12 +28,13 @@ $(document).ready(function() {
 
   function nextQuestion() {
     $("#submit-blue-button").click(function() {
-      $('input:radio[name=radio]').attr('checked',false);
-      displayQuestion();
+      checkAnswer();
     });
   }
 
+
   function displayQuestion() {
+    $('input:radio[name=radio]').attr('checked',false);
     $(".question").text(quiz[questionIndex].question);
     $("#option1").text(quiz[questionIndex].choices[0]);
     $("#option2").text(quiz[questionIndex].choices[1]);
@@ -43,29 +45,47 @@ $(document).ready(function() {
     nextQuestion();
   }
 
+  /*---Checking Answers---*/
+
+  function checkAnswer() {
+    var playerAnswer = $("input[name='radio']:checked");
+      if (playerAnswer.size() > 0) {
+        displayQuestion();
+      } else {
+        alert("Please select a valid answer");
+        nextQuestion();
+      }
+  }
+
 
   /*--- Questions--- */
   var quiz = [ 
 
   {question:"What was the name of Ash Ketchum's first starter Pokemon?",
-  choices: ["Bulbasaur", "Charmander", "Squirtle", "Pikachu"]
+  choices: ["Bulbasaur", "Charmander", "Squirtle", "Pikachu"],
+  answer: 4
   },
 
   {question:"What is Kadabra's final evolution?",
-  choices: ["Abra", "Abrakadabra", "Alakazam", "Mega Alakazam"]
+  choices: ["Mega Alakazam", "Abra", "Abrakadabra", "Alakazam"],
+  answer: 1
   },
 
   {question:"How does Chansey evolve into Blissey?",
-  choices: ["Happiness", "Friendship", "Love", "Holding an item"]
+  choices: ["Happiness", "Friendship", "Love", "Holding an item"],
+  answer: 2
   },
 
   {question:"Which Pokemon would be the most effective in a battle against Chikorita?",
-  choices: ["Milotic", "Pichu", "Nidoking", "Chimchar"]
+  choices: ["Milotic", "Pichu", "Nidoking", "Chimchar"],
+  answer: 4
   },
 
   {question:"What type of Pokemon is Gengar?",
-  choices: ["Ghost", "Poison", "Dark and Ghost", "Poison and Ghost"]
+  choices: ["Ghost", "Poison", "Dark and Ghost", "Poison and Ghost"],
+  answer: 4
   }
 
-  ]}
+  ]
+
 });
