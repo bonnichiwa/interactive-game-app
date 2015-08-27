@@ -151,8 +151,8 @@ li {
   display: none;
   position: absolute;
   left: 1000px;
-/*  margin-top: -32.75em;
-  margin-left: -26.5em;*/
+  margin-top: -32.75em;
+  margin-left: -26.5em;
   border: 1.5em solid white;
   border-radius: 5%;
 
