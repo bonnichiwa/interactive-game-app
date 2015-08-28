@@ -64,6 +64,10 @@ li {
   font-family: 'Press Start 2P', sans-serif;
 }
 
+#commence-button:hover {
+  cursor: pointer;
+}
+
 /*--- Quiz interface ---*/
 
 .background-image2 {
@@ -97,6 +101,10 @@ li {
   border: 2px solid skyblue;
   font-family: 'Press Start 2P', sans-serif;
   float: right;
+}
+
+#new-button:hover {
+  cursor: pointer;
 }
 
 /*--- Quiz questions ---*/
@@ -209,3 +217,7 @@ li {
   border: 2px solid skyblue;
   font-family: 'Press Start 2P', sans-serif;
  }
+
+ #try-button:hover {
+  cursor: pointer;
+}
