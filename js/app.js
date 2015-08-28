@@ -37,6 +37,12 @@ $(document).ready(function() {
     $('#battle-song')[0].play();
   }
 
+  function endingSong() {
+    $('#end-song')[0].volume = 0.5;
+    $('#end-song')[0].load();
+    $('#end-song')[0].play();
+  }
+
   /*---Game interface---*/
 
   function gameInterface() {
@@ -106,8 +112,10 @@ $(document).ready(function() {
 
   /*-- End game--*/
   function endGame() {
+    endingSong();
     $("#final-score").text(score);
     $("#try-button").click(function() {
+      $('#end-song')[0].play();
       $("#congrats-end").fadeOut(2000);
       $("#landing-page").fadeIn(2000);
     });
