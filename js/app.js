@@ -73,6 +73,7 @@ $(document).ready(function() {
       console.log("Current question index: " + questionIndex);
     } else {
       $('#battle-song')[0].pause();
+      endingSong();
       $("#quiz-interface").fadeOut(1000);
       $("#congrats-end").fadeIn(1000);
       endGame();
@@ -113,7 +114,6 @@ $(document).ready(function() {
 
   /*-- End game--*/
   function endGame() {
-    endingSong();
     $("#final-score").text(score);
     $("#try-button").click(function() {
       $('#end-song')[0].pause();
