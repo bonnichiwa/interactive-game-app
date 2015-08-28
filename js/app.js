@@ -56,14 +56,20 @@ $(document).ready(function() {
 
 
   function displayQuestion() {
-    $('input:radio[name=radio]').attr('checked',false);
-    $(".question").text(quiz[questionIndex].question);
-    $("#option1").text(quiz[questionIndex].choices[0]);
-    $("#option2").text(quiz[questionIndex].choices[1]);
-    $("#option3").text(quiz[questionIndex].choices[2]);
-    $("#option4").text(quiz[questionIndex].choices[3]);
-    $("#question-number").text(questionIndex+1);
-    console.log("Current question index: " + questionIndex);
+    if (questionIndex < 5) {
+      $('input:radio[name=radio]').attr('checked',false);
+      $(".question").text(quiz[questionIndex].question);
+      $("#option1").text(quiz[questionIndex].choices[0]);
+      $("#option2").text(quiz[questionIndex].choices[1]);
+      $("#option3").text(quiz[questionIndex].choices[2]);
+      $("#option4").text(quiz[questionIndex].choices[3]);
+      $("#question-number").text(questionIndex+1);
+      console.log("Current question index: " + questionIndex);
+    } else {
+      $("#quiz-interface").fadeOut(1000);
+      $("#congrats-end").fadeIn(1000);
+      endGame();
+    }
   }
 
   /*---Checking Answers---*/
@@ -96,6 +102,15 @@ $(document).ready(function() {
       } else {
         alert("Please select a valid answer");
       }
+  }
+
+  /*-- End game--*/
+  function endGame() {
+    $("#final-score").text(score);
+    $("#try-button").click(function() {
+      $("#congrats-end").fadeOut(2000);
+      $("#landing-page").fadeIn(2000);
+    });
   }
 
 

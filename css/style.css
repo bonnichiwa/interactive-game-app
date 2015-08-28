@@ -189,3 +189,23 @@ li {
   font-size: 1em;
   text-shadow: 1px 1px white;
 }
+
+/* -- Final slide --*/
+ 
+ #congrats-end{
+  display:none;
+  text-align: center;
+ }
+
+ #try-button {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  color: skyblue;
+  padding: .75em;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid skyblue;
+  font-family: 'Press Start 2P', sans-serif;
+ }
