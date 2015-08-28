@@ -7,12 +7,12 @@ $(document).ready(function() {
   function startGame() {
     openingSong();
     $('#commence-button').click(function() {
-    $("#landing-page").fadeOut(1000);
-    $("#quiz-interface").fadeIn(1000);
-    $("#opening-song")[0].pause();
-    battleSong();
-    gameInterface();
-  })
+      $("#landing-page").fadeOut(1000);
+      $("#quiz-interface").fadeIn(1000);
+      $("#opening-song")[0].pause();
+      battleSong();
+      gameInterface();
+    })
 
     $('#new-button').click(function() {
     $("#quiz-interface").fadeOut(1000);
@@ -119,6 +119,7 @@ $(document).ready(function() {
       $('#end-song')[0].pause();
       $("#congrats-end").fadeOut(2000);
       $("#landing-page").fadeIn(2000);
+      startGame();
     });
   }
 
